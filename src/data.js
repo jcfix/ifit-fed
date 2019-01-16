@@ -14,21 +14,25 @@ export const subLinks = [
   {
     key: '1',
     text: 'Overview',
-    url: '#'
+    url: '#',
+    isSelected: false
   },
   {
     key: '2',
     text: 'Features',
-    url: '#'
+    url: '#',
+    isSelected: false
   },
   {
     key: '3',
     text: 'Programs',
-    url: '#'
+    url: '#',
+    isSelected: true
   },
   {
     key: '4',
     text: 'Training',
-    url: '#'
+    url: '#',
+    isSelected: false
   }
 ]

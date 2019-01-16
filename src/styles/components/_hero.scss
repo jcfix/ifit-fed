@@ -1,7 +1,36 @@
+@import '../global/vars.scss';
+
 .hero-section {
-    background-image: url(../../img/hero-image.jpg);
+    background: url(../img/hero-image.jpg) center / cover no-repeat;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 475px;
+    height: 747px;
+    position: relative;
+
+    &:before {
+        background: url(../img/bg-darkening.png) center / cover no-repeat;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        content: '';
+        display: block;
+        height: 747px;
+    }
+
+    .hero-text {
+        left: 188px;
+        position: absolute;
+        top: 393px;
+
+        h1 {
+            width: 610px;
+        }
+
+        p {
+            color: $white;
+            line-height: 1.029;
+            width: 376px;
+        }
+    }
 }

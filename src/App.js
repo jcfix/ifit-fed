@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import './App.scss';
+
+import Header from './components/Header';
+import Hero from './components/Hero';
+import './styles/App.scss';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <p>
-            Hello World.
-          </p>
-        </header>
+      <div className='App'>
+      <Header />
+      <Hero />
       </div>
     );
   }

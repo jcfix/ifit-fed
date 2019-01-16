@@ -10,23 +10,31 @@ You will need `npm` installed
 ### Installation
 
 To install node packages:
-`npm install`
+
+```sh
+npm install
+```
 
 To serve:
 
-`npm start`
+```sh
+npm start
+```
 
 To run tests:
-`npm test`
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+```sh
+npm test
+```
+See create-react-app's documentation on [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information
 
 To build:
-`npm run build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```sh
+npm run build
+```
 
-The build is minified and the filenames include the hashes.<br>
+Builds the app for production to the `build` folder
 
 
 [React]: https://github.com/facebook/create-react-app

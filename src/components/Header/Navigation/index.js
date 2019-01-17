@@ -7,7 +7,6 @@ type Props = {|
 export default class Navigation extends React.Component<Props> {
 
   render = () => {
-
     const { links } = this.props;
     return (
       <ul>

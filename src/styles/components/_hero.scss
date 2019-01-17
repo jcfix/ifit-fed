@@ -1,36 +1,73 @@
-@import '../global/vars.scss';
+@import './../global/main';
 
 .hero-section {
-    background: url(../img/hero-image.jpg) center / cover no-repeat;
+  background: url(../img/hero-image.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  margin-bottom: 44px;
+  position: relative;
+
+  @media(min-width: $tablet) {
+    height: 747px;
+  }
+
+  &:before {
+    background: url(../img/bg-darkening.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 747px;
-    position: relative;
+    content: '';
+    display: block;
+    height: 500px;
 
-    &:before {
-        background: url(../img/bg-darkening.png) center / cover no-repeat;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        content: '';
-        display: block;
-        height: 747px;
+    @media(min-width: $tablet) {
+      height: 747px;
+    }
+  }
+
+  .hero-text {
+    background-color:rgba(66, 66, 66, 0.7);
+    padding: 30px 0;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    transform: translateY(-25px);
+
+    &.fade-in {
+      opacity: 1;
+      transform: translateY(0);
+      transition: all 900ms ease 800ms;
     }
 
-    .hero-text {
-        left: 188px;
-        position: absolute;
-        top: 393px;
-
-        h1 {
-            width: 610px;
-        }
-
-        p {
-            color: $white;
-            line-height: 1.029;
-            width: 376px;
-        }
+    @media(min-width: $tablet) {
+      background: none;
+      bottom: auto;
+      left: 188px;
+      padding: 0;
+      top: 393px;
     }
+      
+
+    h1 {
+      margin: 0 30px;
+
+      @media(min-width: $tablet) {
+        margin: 0;
+        width: 610px;
+      }
+    }
+
+    p {
+      color: $white;
+      line-height: 1.029;
+      margin: 0 30px;
+
+      @media(min-width: $tablet) {
+        margin: 0;
+        width: 376px;
+      }
+    }
+  }
 }

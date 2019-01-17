@@ -1,0 +1,84 @@
+@import 'vars';
+
+html, body {
+  height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #fff;
+  color: $gray;
+  font: $weight-regular 16px $proxima-nova, sans-serif;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote {
+  font-weight: 400;  
+  margin: 0;
+}
+
+h1 {
+  color: $white;
+  font-weight: $weight-light;
+  font-size: 44px;
+  line-height: 0.846;
+  text-transform: uppercase;
+
+  @media(min-width: $tablet) {
+    font-size: 52px;
+  }
+}
+
+h2 {
+  font-size: 34px;
+  line-height: 1.006;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: $weight-bold;
+  line-height: 1.064;
+  margin-top: 4px;
+}
+
+h4 {
+  color: $light-gray;
+  font-family: $georgia serif;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 1.405;
+}
+
+p {
+  font-size: 17.5px;
+  line-height: 1.371;
+}
+
+blockquote {
+  color: $white;
+  font-size: 17.5px;
+  font-weight: $weight-semibold;
+  line-height: 1.371;
+}
+
+a {
+  color: $gray;
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

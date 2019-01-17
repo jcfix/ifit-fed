@@ -1,0 +1,70 @@
+@import './../global/main';
+
+.grid-area {
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+  
+    @media(min-width: $tablet) {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media(min-width: $wide) {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-content: space-around;
+    }
+
+    .box {
+      box-shadow: none;
+      margin-bottom: 10px;
+      transform: translateY(0);
+      transition: all 400ms ease;
+      width: 240px;
+
+      @media(min-width: $tablet) {
+        margin-bottom: 0;
+      }
+  
+  
+      &:hover {
+        box-shadow: 0 4px 12px 0 rgba(46, 49, 52, 0.3);
+        transform: translateY(-3px);
+        transition: all 400ms ease;
+      }
+  
+      .box-heading {
+        margin-left: 4px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  button {
+    background: none;
+    background-color: $blue;
+    border: 1px solid $white;
+    color: $white;
+    display: block;
+    font-size: 17.5px;
+    font-weight: $weight-bold;
+    line-height: 1.486;
+    margin: 0 auto;
+    min-width: 222px;
+    padding: 22px 36px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 400ms ease;
+
+    &:hover {
+      background-color: $white;
+      border-color: $blue;
+      color: $blue;
+      cursor: pointer;
+      transition: all 400ms ease;
+    }
+  }
+}

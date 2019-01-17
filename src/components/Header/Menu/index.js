@@ -7,11 +7,7 @@ export default class Menu extends React.Component {
   render () {
     return (
       <React.Fragment>
-      <div>
-        <button>Menu</button>
-      </div>
-
-      this.state.isOpen ? (
+      {this.state.isOpen ? (
         <div>
           <ul>
             <li>Item 1</li>
@@ -21,7 +17,7 @@ export default class Menu extends React.Component {
         </div>
       ) : (
         null
-      )
+      )}
       </React.Fragment>
     )
   }

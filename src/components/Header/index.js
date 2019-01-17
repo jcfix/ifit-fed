@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Menu from './Menu';
 import Navigation from './Navigation';
 import logo from '../../img/logo.png';
 import menuIcon from '../../img/icons/menu-icon.png';
@@ -17,6 +18,7 @@ const Header = () => {
             <span>Menu</span>
             <img src={menuIcon} alt='menu-icon' />
           </button>
+          <Menu />
         </div>
       </div>
       <div  className='header secondary-header'>
@@ -33,3 +35,5 @@ const Header = () => {
 }
 
 export default Header;
+
+// TODO: Pull each button out and make its own component with onclick to toggle menu and searchbar

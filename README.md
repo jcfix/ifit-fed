@@ -5,7 +5,7 @@ This project uses uses [React][] and SCSS to convert a PSD mockup into a static 
 ## Getting Started
 
 ### Prerequisites
-You will need `npm` installed
+You will need `npm` and `node-sass` installed
 
 ### Installation
 
